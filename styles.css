@@ -1,0 +1,88 @@
+html{
+    font-size:100%;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+
+.blue-panel{
+    background-color: #003050;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    height: 100%;
+    min-height: 200px;
+}
+
+.headline{
+    color: #FFFFFF;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+a.button{
+    margin-top: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration:none;
+    border: thin inset #FFFFFF;
+    padding: 5px;
+}
+
+.left{
+    float: left;
+    margin-left: 20%;
+    align-self: center;
+}
+
+.overlap{
+    color: #FFFFFF;
+    position: relative;
+}
+
+.overlap img
+{
+    float: right;
+    margin-right: 20px;
+    vertical-align: bottom;
+}
+
+.menu-nav{
+    background-color: #A2A2A2;
+    margin-bottom: 10px;
+}
+
+.menu-nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: #003050;
+    position: sticky;
+}
+
+.menu-nav li{
+    display:inline;
+    float: right;
+    font-weight: medium;
+}
+
+.menu-nav li a{
+    display: block;
+    color: white;
+    width: 100px;
+    padding: 8px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-nav li a:hover{
+    background-color: #005020;
+}
+
+.menu-nav .active{
+    background-color: #005020;
+}
