@@ -82,11 +82,13 @@ Task.prototype.create = function (){
     completespan.classList.add("completespan");
      //Terrible variable names but means preserves checkbox status for sorting after list clear and remake
     completespan.checked = this.complete;
+
+    //because onclick scope is weird
+    var thispreserved = this;
+
     completespan.onclick = function(){
         //toggle true/false
-        //this keyword references onclick element, not Task
-        this.complete = !(this.complete);
-        //need to update taskList array - will be done automatically on sort() because it is global and reassigns
+        thispreserved.complete = !(thispreserved.complete);
 
     };
 
@@ -183,6 +185,10 @@ function sortTasksByComplete(){
 
     })
 
+}
+
+function toggleComplete(){
+    this.complete = !(this.complete);
 }
 
 //disclaimer for running on smaller devices
