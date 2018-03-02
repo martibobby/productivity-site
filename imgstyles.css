@@ -14,5 +14,12 @@
 .column img{
     margin-top: 8px;
     vertical-align: middle;
+}
 
+.column img:hover{
+    opacity: .8;
+}
+
+#largeimg img{
+    max-width: 1000px;
 }

@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c031b3a-9546-4616-ab32-042228010a5f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/imgscripts.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/imgstyles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/motivation.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/scripts.js" afterPath="$PROJECT_DIR$/scripts.js" />
-      <change beforePath="$PROJECT_DIR$/styles.css" afterPath="$PROJECT_DIR$/styles.css" />
+      <change beforePath="$PROJECT_DIR$/imgscripts.js" afterPath="$PROJECT_DIR$/imgscripts.js" />
+      <change beforePath="$PROJECT_DIR$/imgstyles.css" afterPath="$PROJECT_DIR$/imgstyles.css" />
+      <change beforePath="$PROJECT_DIR$/motivation.html" afterPath="$PROJECT_DIR$/motivation.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +32,8 @@
       <file leaf-file-name="motivation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/motivation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="30" column="68" lean-forward="false" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+            <state relative-caret-position="294">
+              <caret line="49" column="72" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -45,8 +42,8 @@
       <file leaf-file-name="imgscripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imgscripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="168">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -55,8 +52,8 @@
       <file leaf-file-name="imgstyles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imgstyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="399">
+              <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -134,10 +131,10 @@
         <option value="$PROJECT_DIR$/before sam.js" />
         <option value="$PROJECT_DIR$/scripts.js" />
         <option value="$PROJECT_DIR$/styles.css" />
-        <option value="$PROJECT_DIR$/imgstyles.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/motivation.html" />
         <option value="$PROJECT_DIR$/imgscripts.js" />
+        <option value="$PROJECT_DIR$/motivation.html" />
+        <option value="$PROJECT_DIR$/imgstyles.css" />
       </list>
     </option>
   </component>
@@ -147,7 +144,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1120" />
     <option name="width" value="1144" />
     <option name="height" value="1462" />
@@ -204,15 +201,15 @@
       <updated>1519662030553</updated>
       <workItem from="1519662032109" duration="5611000" />
       <workItem from="1519865485808" duration="43936000" />
-      <workItem from="1520001386932" duration="3155000" />
+      <workItem from="1520001386932" duration="4020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52702000" />
+    <option name="totallyTimeSpent" value="53567000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="2274" height="1472" extended-state="7" />
+    <frame x="-9" y="-9" width="2274" height="1472" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10328014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -344,14 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imgstyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
@@ -376,18 +365,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/imgstyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/motivation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="68" lean-forward="false" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+        <state relative-caret-position="294">
+          <caret line="49" column="72" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imgscripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="168">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding />
         </state>
       </provider>
