@@ -38,12 +38,13 @@ body{
 }
 
 .menu-nav li a:hover{
-    background-color: #fed141;
+    background-color: #502000;
+    color: #ecf0f1;
 }
 
 .menu-nav .active{
-    background-color: #ecf0f1;
-    color: #003050;
+    background-color: #502000;
+    color: #ecf0f1;
 }
 
 /*END TOP MENU NAVIGATION STYLES */
@@ -69,12 +70,10 @@ h3{
 
 
 /*probably should have used div's with fixed width OR a dynamic grid like flexbox or bootstrap*/
-#tasks span{
-    margin-right: 10%;
-}
+
 
 #complete{
-    margin-right: 5%;
+    margin-left: 0%;
 }
 
 /*to prevent spillover*/
@@ -82,8 +81,16 @@ h3{
     margin-right: 0%;
 }
 
-.tasklistheader span{
-    margin-right: 15%;
+.tasklistheader div{
+    display: inline;
+    margin-left: 10%;
+}
+
+.task div{
+    display:inline;
+    margin-left: 10%;
+    max-width: 100px;
+    word-break: break-all;
 }
 
 button{
@@ -92,6 +99,13 @@ button{
     color: #003050;
     box-shadow: 1px 1px #003050;
     border-radius: 10px;
+}
+
+button:hover{
+    background: #502000;
+    color: #ecf0f1;
+    box-shadow: 1px 1px #502000;
+    border: 2px solid #502000;
 }
 
 .container{
@@ -131,10 +145,6 @@ button{
 .removebutton {
     font-size: 3em;
     font-weight: bold;
-}
-
-span.taskname{
-    margin-left: 10%;
 }
 
 /*START STYLING FOR TASK LIST */

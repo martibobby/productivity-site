@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="imgstyles.css">
     <script src="scripts.js"></script>
 
     <!--add fontawesome icons which was approved in class-->
@@ -19,12 +20,12 @@
 <div class="menu-nav">
     <ul>
         <li><a href="#" class="active">To Do</a></li>
-        <li><a href="gallery.html">Motivation</a></li>
+        <li><a href="motivation.html">Motivation</a></li>
     </ul>
 </div>
 
 <div class="container" id="back">
-    <h1 class="headline">Task List</h1>
+    <h1>Task List</h1>
     <div class="taskarea">
         <h2>Enter new task:</h2>
         <input type="text" placeholder="I have to do..." id="newtask" maxlength="25"> <!--add I have to do.... for [category] -->
@@ -44,16 +45,17 @@
             <button id="sortdeadline">Sort by Deadline</button>
             <button id="sortdate">Sort by Create Date</button>
             <button id="sortcat">Sort by Category</button>
+            <button id="sortcomplete">Sort by Complete Status</button>
 
             <ul class="tasklistheader">
                 <li>
-                    <span id="complete">Complete?</span> <span>Task</span> <span>Deadline</span> <span>Creation Date</span> <span>Category</span><span id="deletebutton">Delete?</span>
+                    <div id="complete">Complete?</div> <div>Task</div> <div>Deadline</div> <div>Creation Date</div> <div>Category</div><div id="deletebutton">Delete?</div>
                 </li>
             </ul>
 
             <ul id="tasks">
                 <!--model li format, created in js
-                <li class="task"><span class="createdate"></span> <span class="taskname"></span> <span class="taskdate"></span> <span class="category"></span> <input type="checkbox" class="complete> </li>
+                <li class="task"><div class="createdate"></div> <div class="taskname"></div> <div class="taskdate"></div> <div class="category"></div> <input type="checkbox" class="complete> </li>
                 -->
             </ul>
         </div>

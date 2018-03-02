@@ -32,21 +32,26 @@ function load(){
         var sortNameHTML = document.getElementById("sortname");
         sortNameHTML.onclick = function(){
             sortTasksByName();
-        }
+        };
 
         var sortDeadlineHTML = document.getElementById("sortdeadline");
         sortDeadlineHTML.onclick = function() {
             sortTasksByDeadline();
-        }
+        };
 
         var sortDateHTML = document.getElementById("sortdate");
         sortDateHTML.onclick = function() {
             sortTasksByCreateDate();
-        }
+        };
 
         var sortCategoryHTML = document.getElementById("sortcat");
         sortCategoryHTML.onclick = function() {
             sortTasksByCategory();
+        }
+
+        var sortCompleteHTML = document.getElementById("sortcomplete");
+        sortCompleteHTML.onclick = function() {
+            sortTasksByComplete();
         }
 
     }
@@ -56,37 +61,36 @@ Task.prototype.create = function (){
     var li = document.createElement("li");
     li.classList.add("task");
 
-    var namespan = document.createElement("span");
+    var namespan = document.createElement("div");
     namespan.classList.add("taskname");
     namespan.innerHTML = this.name;
 
-    var createdatespan = document.createElement("span");
+    var createdatespan = document.createElement("div");
     createdatespan.classList.add("createdate");
     createdatespan.innerHTML = this.createDate.toDateString();
 
-    var datespan = document.createElement("span");
+    var datespan = document.createElement("div");
     datespan.classList.add("taskdate");
     datespan.innerHTML = this.deadline.toDateString();
 
-    var catspan = document.createElement("span");
+    var catspan = document.createElement("div");
     catspan.classList.add("category");
     catspan.innerHTML = this.category;
 
-     var complete = document.createElement("input");
-     complete.type = "checkbox";
-     catspan.classList.add("complete");
-     //cheange wording plz !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+     var completespan = document.createElement("input");
+    completespan.type = "checkbox";
+    completespan.classList.add("completespan");
      //Terrible variable names but means preserves checkbox status for sorting after list clear and remake
-     complete.checked = this.complete;
+    completespan.checked = this.complete;
+    completespan.onclick = function(){
+        //toggle true/false
+        //this keyword references onclick element, not Task
+        this.complete = !(this.complete);
+        //need to update taskList array - will be done automatically on sort() because it is global and reassigns
 
-     complete.onclick = function(){
-         //toggle true/false
-         this.complete = !(this.complete);
-         console.log(this.complete);
+    };
 
-     }
-
-     var deletespan = document.createElement("span");
+     var deletespan = document.createElement("div");
      deletespan.classList.add("deletebutton");
      deletespan.innerHTML = "<button><i class=\"fas fa-minus-circle\"></i></button>";
      deletespan.onclick = function() {
@@ -94,7 +98,7 @@ Task.prototype.create = function (){
 
      };
 
-     li.appendChild(complete);
+     li.appendChild(completespan);
      li.appendChild(namespan);
      li.appendChild(datespan);
      li.appendChild(createdatespan);
@@ -103,7 +107,7 @@ Task.prototype.create = function (){
 
      HTMLlist.appendChild(li);
 
-}
+};
 
 //START SORT FUNCTIONS
 function sortTasksByName(){
@@ -156,6 +160,21 @@ function sortTasksByCategory(){
 
     taskList.sort(function(a, b) {
         return a.category.localeCompare(b.category);
+
+    } );
+
+    taskList.forEach(function(task){
+        task.create();
+
+    })
+
+}
+
+function sortTasksByComplete(){
+    HTMLlist.innerHTML = "";
+
+    taskList.sort(function(a, b) {
+        return (a.complete - b.complete);
 
     } );
 
