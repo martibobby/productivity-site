@@ -5,28 +5,60 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" src="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="scripts.js"></script>
+
+    <!--add fontawesome icons which was approved in class-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
 <!--Start main content -->
-<body>
+
+<body onload="load()">
 <!-- start navbar menu on top -->
 <div class="menu-nav">
     <ul>
-        <li><a href="about.html" onclick="msgalert()">About</a></li> <!--can add class"active" -->
-        <li><a href="#" id="port" onclick="changeColor('back')">Portfolio</a></li>
-        <li><a href="interests.html">Interests</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="#" class="active">To Do</a></li>
+        <li><a href="gallery.html">Motivation</a></li>
     </ul>
 </div>
 
-<div class="blue-panel" id="back">
-    <h1 class="headline left">Bobby Martin</h1>
+<div class="container" id="back">
+    <h1 class="headline">Task List</h1>
+    <div class="taskarea">
+        <h2>Enter new task:</h2>
+        <input type="text" placeholder="I have to do..." id="newtask" maxlength="25"> <!--add I have to do.... for [category] -->
+        <label for="deadline">Due Date: </label><input type="date" name="deadline" id="deadline">
+        <label for="cat">Category: </label>
+        <select id="cat">
+            <option value="school">School</option>
+            <option value="work">Work</option>
+            <option value="fun">Fun</option>
+            <option value="misc">Misc</option>
+        </select>
+        <button id="addtask">Add Task</button>
+        <div class="tasklist">
+            <h2>Your Tasks:</h2>
+            <h3>Sory By:</h3>
+            <button id="sortname">Sort by Name</button>
+            <button id="sortdeadline">Sort by Deadline</button>
+            <button id="sortdate">Sort by Create Date</button>
+            <button id="sortcat">Sort by Category</button>
 
-    <div class="overlap">
-        <img src="images/man-user.png">
+            <ul class="tasklistheader">
+                <li>
+                    <span>Complete?</span> <span>Task</span> <span>Deadline</span> <span>Creation Date</span> <span>Category</span><span>Delete?</span>
+                </li>
+            </ul>
+
+            <ul id="tasks">
+                <!--model li format, created in js
+                <li class="task"><span class="createdate"></span> <span class="taskname"></span> <span class="taskdate"></span> <span class="category"></span> <input type="checkbox" class="complete> </li>
+                -->
+            </ul>
+        </div>
     </div>
 </div>
+
 </body>
 </html>

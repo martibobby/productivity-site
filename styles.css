@@ -1,53 +1,13 @@
 html{
-    font-size:100%;
+    font-size:16px;
 }
 
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
     font-size: 1rem;
 }
 
-.blue-panel{
-    background-color: #003050;
-    text-align: center;
-    padding: 20px 0px 20px 0px;
-    position: relative;
-    height: 100%;
-    min-height: 200px;
-}
-
-.headline{
-    color: #FFFFFF;
-    font-size: 2em;
-    vertical-align: middle;
-}
-
-a.button{
-    margin-top: 50px;
-    color: #FFFFFF;
-    font-weight: bold;
-    text-decoration:none;
-    border: thin inset #FFFFFF;
-    padding: 5px;
-}
-
-.left{
-    float: left;
-    margin-left: 20%;
-    align-self: center;
-}
-
-.overlap{
-    color: #FFFFFF;
-    position: relative;
-}
-
-.overlap img
-{
-    float: right;
-    margin-right: 20px;
-    vertical-align: bottom;
-}
+/* START TOP MENU NAVIGATION */
 
 .menu-nav{
     background-color: #A2A2A2;
@@ -66,23 +26,124 @@ a.button{
 .menu-nav li{
     display:inline;
     float: right;
-    font-weight: medium;
+    font-weight: bold;
 }
 
 .menu-nav li a{
     display: block;
     color: white;
     width: 100px;
-    padding: 8px;
+    padding: 16px;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
 .menu-nav li a:hover{
-    background-color: #005020;
+    background-color: #fed141;
 }
 
 .menu-nav .active{
-    background-color: #005020;
+    background-color: #ecf0f1;
+    color: #003050;
+}
+
+/*END TOP MENU NAVIGATION STYLES */
+
+/*START FONT STYLING */
+
+h1{
+    color: #003050;
+    font-size: 2rem;
+}
+
+h2{
+    color: #003050;
+    font-size: 1rem;
+}
+
+h3{
+    color: #003050;
+    font-size: .8rem;
+}
+
+/*END FONT STYLING */
+
+#tasks span{
+    margin-right: 10%;
+}
+
+.tasklistheader span{
+    margin-right: 10%;
+}
+
+button{
+    background: none;
+    border: 2px solid #003050;
+    color: #003050;
+    box-shadow: 1px 1px #003050;
+    border-radius: 10px;
+}
+
+.container{
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    margin: 0 5%;
+    min-height: 200px; /*unnecessary but there for safety */
+}
+
+/*START STYLING FOR TASK LIST */
+
+.taskarea{
+    position: relative;
+    background-color: #ecf0f1;
+    padding: 5px 10px 10px 10px;
+    min-height: 200px;
+}
+
+.tasklist ul li{
+    border-bottom: 1px solid #003050;
+    position: relative;
+    padding: 10px 10px;
+    list-style-type: none;
+    background: #FFFFFF;
+    color: #003050;
+}
+
+.tasklist ul li:nth-child(odd) {
+    background: #ecf0f1;
+    color: #003050;
+}
+
+.tasklistheader{
+    font-weight: bold;
+}
+
+.removebutton {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+span.taskname{
+    margin-left: 10%;
+}
+
+/*START STYLING FOR TASK LIST */
+.tasklist th{
+    text-align: left;
+    border: 2px solid #003050;
+}
+
+/* add styling for add task button? */
+a.button{
+    margin-top: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration:none;
+    border: thin inset #FFFFFF;
+    padding: 5px;
+}
+
+.deletebutton button{
+    border: 0;
+    box-shadow: none;
 }
