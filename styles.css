@@ -8,7 +8,6 @@ body{
 }
 
 /* START TOP MENU NAVIGATION */
-
 .menu-nav{
     background-color: #A2A2A2;
     margin-bottom: 10px;
@@ -68,12 +67,23 @@ h3{
 
 /*END FONT STYLING */
 
+
+/*probably should have used div's with fixed width OR a dynamic grid like flexbox or bootstrap*/
 #tasks span{
     margin-right: 10%;
 }
 
+#complete{
+    margin-right: 5%;
+}
+
+/*to prevent spillover*/
+#deletebutton{
+    margin-right: 0%;
+}
+
 .tasklistheader span{
-    margin-right: 10%;
+    margin-right: 15%;
 }
 
 button{
